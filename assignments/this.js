@@ -31,9 +31,24 @@ greet() // this refers to the window object or undefined if you 'use strict'
 
 // code example for Implicit Binding
 
+yusuf.greet() // this refers back to yusuf.
+
 // Principle 3
 
 // code example for New Binding
+
+function Cat(name, color) {
+  this.name = name;
+  this.color = color;
+  console.log(this);
+}
+
+Cat.prototype.meows = function () {
+  console.log('meow meow');
+}
+
+const tristan = new Cat('Tristan', 'blue'); // this refers to the newly created object.
+tristan.meows();
 
 // Principle 4
 
