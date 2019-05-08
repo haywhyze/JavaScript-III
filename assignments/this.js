@@ -1,4 +1,4 @@
-/* The for principles of "this";
+/* The four principles of "this";
  * in your own words. explain the four principle for the "this" keyword below.
  *
  * 1. Window Binding occurs when a function containing the `this` keyword was invoked on the global
@@ -25,7 +25,11 @@ const yusuf = {
   }
 }
 
-// greet() // this refers to the window object or undefined if you 'use strict'
+const helloWorld = function() {
+  console.log('hello World this is ', this);
+}
+
+helloWorld(); // this refers to the window object or undefined if you 'use strict'
 
 // Principle 2
 
