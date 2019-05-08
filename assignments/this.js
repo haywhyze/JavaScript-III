@@ -17,6 +17,16 @@
 
 // code example for Window Binding
 
+const yusuf = {
+  name: 'Yusuf Ayo',
+  age: 25,
+  greet() {
+    console.log(`Hello world, I am ${this.name} and I am ${this.age} years old`);
+  }
+}
+
+greet() // this refers to the window object or undefined if you 'use strict'
+
 // Principle 2
 
 // code example for Implicit Binding
